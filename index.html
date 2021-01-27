@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Седона</title>
-  </head>
-  <body>
 
-    <p>Для тех, кто люит путешествия</p>
+<head>
+  <meta charset="utf-8">
+  <title>Седона - город в Аризоне</title>
+</head>
 
-  </body>
+<body>
+  <header>
+    <nav>
+      <a href="#"><img src="https://via.placeholder.com/138x70" alt="Логотип City of Sedona" width="138"
+          height="70"></a>
+      <ul>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Седона - город в Аризоне</h1>
+
+    <section>
+      <h2>Титульный слайд</h2>
+      <img src="https://via.placeholder.com/187x70" alt="Welcome" width="187" height="70">
+      <img src="https://via.placeholder.com/255x28" alt="to the gorgeous" width="255" height="28">
+      <img src="https://via.placeholder.com/456x77" alt="Sedona" width="456" height="77">
+      <img src="https://via.placeholder.com/283x72" alt="Because the Grand Canyon sucks!" width="283" height="72">
+    </section>
+
+    <section>
+      <h2>Причины выбора</h2>
+      <p>Седона — небольшой городок в Аризоне,<br>
+        заслуживающий большего!</p>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div>
+        <h3>Настоящий<br>городок</h3>
+        <p>— №1 —</p>
+        <p>Седона - не аттракцион для туристов,<br>
+          там течёт своя жизнь</p>
+      </div>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/75x75" alt="Жильё" width="75" height="75">
+          <h4>Жильё</h4>
+          <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/75x75" alt="Еда" width="75" height="75">
+          <h4>Еда</h4>
+          <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/75x75" alt="Сувениры" width="75" height="75">
+          <h4>Сувениры</h4>
+          <p>Не только китайского, но и местного<br>производства!</p>
+        </li>
+      </ul>
+      <div>
+        <div>
+          <h3>Там есть<br>Мост дьявола</h3>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3>Небольшая<br>площадь</h3>
+          <p>— №3 —</p>
+          <p>все достопримечательности<br>находятся очень близко</p>
+        </div>
+        <div>
+          <h3>Красивая<br>дорога</h3>
+          <p>— №4 —</p>
+          <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
+        </div>
+        <div>
+          <h3>Мало<br>туристов</h3>
+          <p>— №5 —</p>
+          <p>большинство едет в гранд каньон<br>и толпится там</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Бронирование</h2>
+      <p>Заинтересовались?</p>
+      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+    </section>
+
+    <section>
+      <h2>Карта</h2>
+      <!-- Карта -->
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Контактная информация</h2>
+      <p>#visitSEDONA</p>
+      <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+    </section>
+    <section>
+      <h2>Социальные сети</h2>
+      <ul>
+        <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Twitter" width="20" height="20"></a></li>
+        <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Facebook" width="20" height="20"></a></li>
+        <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Youtube" width="20" height="20"></a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Ссылка на разработчика</h2>
+      <p>Website by</p>
+      <img src="https://via.placeholder.com/115x41" alt="Academy" width="115" height="41">
+    </section>
+  </footer>
+
+  <section>
+    <h2>Форма поиска</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="booking-start">Дата заезда:</label>
+        <input id="booking-start" type="date" name="booking-start">
+      </p>
+      <p>
+        <label for="booking-time">Дата выезда:</label>
+        <input id="booking-time" type="date" name="time" placeholder="10:00">
+      </p>
+      <p>
+        <label for="booking-adults">Взрослые:</label>
+        <button type="button" id="remove-adults">
+          <img src="https://via.placeholder.com/12x12" alt="Уменьшить количество" width="12" height="12">
+        </button>
+        <input id="booking-adults" type="text" name="booking-adults" alt="Взрослые" readonly="readonly" value="0">
+        <button type="button" id="add-adults">
+          <img src="https://via.placeholder.com/12x12" alt="Увеличить количество" width="12" height="12">
+        </button>
+      </p>
+      <p>
+        <label for="booking-children">Дети:</label>
+        <button type="button" id="remove-children">
+          <img src="https://via.placeholder.com/12x12" alt="Уменьшить количество" width="12" height="12">
+        </button>
+        <input id="booking-children" type="text" name="booking-children" alt="Дети" readonly="readonly" value="0">
+        <button type="button" id="add-children">
+          <img src="https://via.placeholder.com/12x12" alt="Увеличить количество" width="12" height="12">
+        </button>
+      </p>
+      <button type="submit">Найти</button>
+    </form>
+  </section>
+</body>
+
 </html>
