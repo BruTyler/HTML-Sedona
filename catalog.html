@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона - город в Аризоне</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img src="https://via.placeholder.com/138x70" alt="Логотип City of Sedona" width="138"
+          height="70"></a>
+      <ul>
+        <li><a href="index.html">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a>Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Гостиницы Седоны</h1>
+
+    <section>
+      <h2>Фильтр гостиниц</h2>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <label for="goods-pool">Бассейн</label>
+              <input type="checkbox" id="goods-pool" name="goods-pool" checked>
+            </li>
+            <li>
+              <label for="goods-parking">Бассейн</label>
+              <input type="checkbox" id="goods-parking" name="goods-parking">
+            </li>
+            <li>
+              <label for="goods-wifi">Wi-Fi</label>
+              <input type="checkbox" id="goods-wifi" name="goods-wifi">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <label for="type-hotel">Гостиница</label>
+              <input type="checkbox" id="type-hotel" name="type-hotel" checked>
+            </li>
+            <li>
+              <label for="type-motel">Мотель</label>
+              <input type="checkbox" id="type-motel" name="type-motel" checked>
+            </li>
+            <li>
+              <label for="type-apartment">Апартаменты</label>
+              <input type="checkbox" id="type-apartment" name="type-apartment" checked>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <ul>
+            <li>
+              <label for="price-min">От</label>
+              <input type="number" name="price-min" id="price-min" value="0">
+            </li>
+            <li>
+              <label for="price-max">До</label>
+              <input type="number" name="price-max" id="price-max" value="300">
+            </li>
+          </ul>
+          <div>
+            <input type="range" id="price-min-graph" name="price-min-graph" min="0" max="5000" value="0">
+            <input type="range" id="price-max-graph" name="price-max-graph" min="0" max="5000" value="3000">
+          </div>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+    <section>
+      <h2>Список гостиниц</h2>
+      <div>
+        <p>Найдено: <span id="hotels-found">3</span></p>
+        <div>
+          <p>Сортировка:</p>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По рейтингу</li>
+          </ul>
+        </div>
+        <div>
+          <a><img src="https://via.placeholder.com/11x11" alt="По возрастанию"></a>
+          <a href="#"><img src="https://via.placeholder.com/11x11" alt="По убыванию"></a>
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/135x90" alt="Amara Resort & Spa">
+          <div>
+            <h3>Amara Resort & Spa</h3>
+            <p>Гостиница</p>
+            <p>От 4000 Р.</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+          </div>
+          <div>
+            <div>
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+            </div>
+            <p>Рейтинг: 8,5</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
+          <div>
+            <h3>Desert Quail Inn</h3>
+            <p>Мотель</p>
+            <p>От 3000 Р.</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+          </div>
+          <div>
+            <div>
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+            </div>
+            <p>Рейтинг: 8,9</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
+          <div>
+            <h3>Villas at Poco Diablo</h3>
+            <p>Апартаменты</p>
+            <p>От 2000 Р.</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+          </div>
+          <div>
+            <div>
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+              <img src="https://via.placeholder.com/18x18" alt="Звезда рейтинга">
+            </div>
+            <p>Рейтинг: 9,2</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Контактная информация</h2>
+      <p>#visitSEDONA</p>
+      <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+    </section>
+    <section>
+      <h2>Социальные сети</h2>
+      <ul>
+        <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Twitter" width="20" height="20"></a></li>
+        <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Facebook" width="20" height="20"></a></li>
+        <li><a href="#"><img src="https://via.placeholder.com/20x20" alt="Youtube" width="20" height="20"></a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Ссылка на разработчика</h2>
+      <p>Website by</p>
+      <img src="https://via.placeholder.com/115x41" alt="Academy" width="115" height="41">
+    </section>
+  </footer>
+</body>
+
+</html>
